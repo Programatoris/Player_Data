@@ -1,0 +1,542 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;   
+}
+
+.faq-section {
+    padding-top: 180px;
+    scroll-behavior: smooth;
+    padding-left: 320px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+details {
+    margin-bottom: 15px;
+}
+
+details p {
+    margin-top: 5px;
+}
+
+summary {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: linear-gradient(to left, #dadada 0%, rgba(196, 121, 17, 255) 100%);
+    color: #000;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #000;
+    padding: 5px;
+    text-align: center;
+    color: rgba(196, 121, 17, 255);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+header img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center; 
+    margin-top: auto;
+}
+
+.column {
+    list-style-type: none; 
+    padding: 0; 
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 20px;
+}
+
+.column li {
+    flex: 1;
+}
+
+.column li a {
+    color: white;
+}
+
+.big {
+    font-size: 20px;
+}
+
+.centered-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_text {
+    margin-top: 220px;
+    margin-left: 300px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    margin-left: 100px;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.social-icon {
+    width: 30px; 
+    height: 30px; 
+    margin: 5px;
+}
+
+ul.column {
+    list-style-type: none; 
+    padding: 0; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+ul.column li {
+    flex: 1; 
+    max-width: 250px; 
+    text-align: center; 
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #000;
+    text-align: left;
+}
+
+.navbar .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+    float: left;
+    text-align: left;
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(196, 121, 17, 255);
+    top: 69px;
+    opacity: 0;
+    margin-left: 0px;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.navbar .dropbtn:hover+.dropdown-content,
+.navbar .dropdown-content:hover {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar .dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.8s;
+}
+
+.navbar .dropdown-content a:hover {
+    background-color: grey;
+}
+
+.navbar .dropbtn-news,
+.navbar .dropbtn-news2,
+.navbar .dropbtn-discover,
+.navbar .dropbtn-updates {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+    float: left;
+    text-align: left;
+}
+
+.navbar .dropdown-content-news,
+.navbar .dropdown-content-news2 {
+    display: none;
+    position: absolute;
+    background-color: rgba(196, 121, 17, 255);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    top: 69px;
+    transition: opacity 0.5s, transform 0.5s;
+    margin-left: 55px;
+}
+.navbar .dropdown-content-discover {
+    display: none;
+    position: absolute;
+    background-color: rgba(196, 121, 17, 255);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    top: 69px;
+    transition: opacity 0.5s, transform 0.5s;
+    margin-left: 238px;
+}
+.navbar .dropdown-content-updates {
+    display: none;
+    position: absolute;
+    background-color: rgba(196, 121, 17, 255);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    top: 69px;
+    transition: opacity 0.5s, transform 0.5s;
+    margin-left: 300px;
+}
+
+.navbar .dropbtn-news:hover+.dropdown-content-news,
+.navbar .dropdown-content-news:hover,
+.navbar .dropbtn-news2:hover+.dropdown-content-news2,
+.navbar .dropdown-content-news2:hover,
+.navbar .dropbtn-discover:hover+.dropdown-content-discover,
+.navbar .dropdown-content-discover:hover,
+.navbar .dropbtn-updates:hover+.dropdown-content-updates,
+.navbar .dropdown-content-updates:hover {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar .dropdown-content-news a,
+.navbar .dropdown-content-news2 a,
+.navbar .dropdown-content-discover a,
+.navbar .dropdown-content-updates a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.8s;
+}
+
+.navbar .dropdown-content-news a:hover,
+.navbar .dropdown-content-news2 a:hover,
+.navbar .dropdown-content-discover a:hover,
+.navbar .dropdown-content-updates a:hover {
+    background-color: grey;
+}
+
+h1 {
+    font-weight: bold;
+    padding-right: 400px;
+}
+
+.dropbtn:hover {
+    background-color: rgba(196, 121, 17, 255);
+    color: black;
+    transition: background-color 1.6s;
+}
+
+.navbar .dropbtn:hover,
+.navbar .dropdown-content:hover+.dropbtn {
+    background-color: rgba(196, 121, 17, 255);
+    color: black;
+}
+
+.navbar .dropbtn-news:hover,
+.navbar .dropdown-content-news:hover+.dropbtn-news,
+.navbar .dropbtn-news2:hover+.dropdown-content-news2,
+.navbar .dropbtn-discover:hover+.dropdown-content-discover,
+.navbar .dropbtn-updates:hover+.dropdown-content-updates {
+    background-color: rgba(196, 121, 17, 255);
+    color: black;
+}
+
+.navbar .dropbtn-news2:hover {
+    background-color: rgba(196, 121, 17, 255);
+    color: black;
+}
+
+.navbar .dropbtn-discover:hover {
+    background-color: rgba(196, 121, 17, 255);
+    color: black;
+}
+
+.navbar .dropbtn-updates:hover {
+    background-color: rgba(196, 121, 17, 255);
+    color: black;
+}
+
+.dropbtn,
+.dropbtn-news,
+.dropbtn-news2,
+.dropbtn-updates,
+.dropbtn-discover {
+    transition: background-color 1.6s;
+}
+
+@media only screen and (max-width: 1200px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .faq-section {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        margin: 50px;
+    }
+
+    ul.column li {
+        flex: 100%; 
+        margin-bottom: 10px; 
+    }
+    
+    body {
+        margin: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background: linear-gradient(to left, #dadada 0%, rgba(196, 121, 17, 255) 100%);
+        color: #000;
+    }
+    
+    header {
+        background-color: #000;
+        padding: 10px;
+        text-align: center;
+        color: rgba(196, 121, 17, 255);
+        position: fixed;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    header img {
+        width: 80px;
+        margin-right: 5px;
+    }
+    
+    h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    .navbar {
+        overflow: hidden;
+        background-color: #000;
+        text-align: left;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    .navbar .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: #fff;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        cursor: pointer;
+        text-align: left;
+    }
+    
+    .navbar .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(196, 121, 17, 255);
+        top: 60px;
+        opacity: 0;
+        margin-left: -8px;
+        transition: opacity 0.5s, transform 0.5s;
+        width: 100%;
+        display: flex;
+    }
+    
+    .navbar .dropbtn:hover+.dropdown-content,
+    .navbar .dropdown-content:hover {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .navbar .dropdown-content a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+        transition: background-color 0.8s;
+    }
+    
+    .navbar .dropdown-content a:hover {
+        background-color: grey;
+    }
+    
+    h1 {
+        font-weight: bold;
+        margin-right: -400px;
+    }
+
+    .navbar .dropbtn-news,
+    .navbar .dropbtn-news2,
+    .navbar .dropbtn-discover,
+    .navbar .dropbtn-updates {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: #fff;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        cursor: pointer;
+        text-align: left;
+    }
+    
+    .navbar .dropdown-content-news,
+    .navbar .dropdown-content-news2,
+    .navbar .dropdown-content-discover,
+    .navbar .dropdown-content-updates {
+        display: none;
+        position: absolute;
+        background-color: rgba(196, 121, 17, 255);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        top: 70px;
+        transition: opacity 0.5s, transform 0.5s;
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .img {
+        max-width: 130px;
+        max-height: 50%;
+        border: 5px solid black;
+        justify-content: center;
+    }
+
+    ul.column li {
+        flex: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .navbar .dropdown-content-news,
+    .navbar .dropdown-content-news2 {
+        margin-left: 0;
+    }
+    
+    .navbar .dropdown-content-discover {
+        margin-left: 0;
+    }
+    
+    .navbar .dropdown-content-updates {
+        margin-left: 0;
+    }
+    
+    .navbar .dropbtn-news:hover+.dropdown-content-news,
+    .navbar .dropdown-content-news:hover+.dropbtn-news,
+    .navbar .dropbtn-news2:hover+.dropdown-content-news2,
+    .navbar .dropdown-content-news2:hover+.dropbtn-news2,
+    .navbar .dropbtn-discover:hover+.dropdown-content-discover,
+    .navbar .dropdown-content-discover:hover+.dropbtn-discover,
+    .navbar .dropbtn-updates:hover+.dropdown-content-updates,
+    .navbar .dropdown-content-updates:hover+.dropbtn-updates {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .navbar .dropdown-content-news a,
+    .navbar .dropdown-content-news2 a,
+    .navbar .dropdown-content-discover a,
+    .navbar .dropdown-content-updates a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+        transition: background-color 0.8s;
+    }
+    
+    .navbar .dropdown-content-news a:hover,
+    .navbar .dropdown-content-news2 a:hover,
+    .navbar .dropdown-content-discover a:hover,
+    .navbar .dropdown-content-updates a:hover {
+        background-color: grey;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .navbar .dropbtn,
+    .navbar .dropbtn-news,
+    .navbar .dropbtn-news2,
+    .navbar .dropbtn-discover,
+    .navbar .dropbtn-updates {
+        font-size: 14px; 
+        padding: 10px; 
+    }
+
+    h1 {
+        text-align: center;
+        margin-right: -400px; 
+    }
+
+    .navbar .dropdown-content,
+    .navbar .dropdown-content-news,
+    .navbar .dropdown-content-news2,
+    .navbar .dropdown-content-discover,
+    .navbar .dropdown-content-updates {
+        top: 60px; 
+    }
+
+    .dropbtn-discover,
+    .dropbtn-news,
+    .dropbtn-news2,
+    .dropbtn-updates,
+    .dropbtn-updates {
+        flex-direction: row;
+        display: flex;
+    }
+}
