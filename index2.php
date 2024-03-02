@@ -154,7 +154,7 @@
 
     <footer>
         <div>
-            <p>&copy; 2023 Chromanite Online™ | Contact: support@chromanite.com | Follow us on social media</p>
+            <p>&copy; 2024 Chromanite Online™ | Contact: support@chromanite.com | Follow us on social media</p>
             <nav>
                 <ul class="column">
                     <li>
