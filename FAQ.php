@@ -55,13 +55,6 @@
                 <a href="#events">Events</a>
                 <a href="#community-updates">Community Updates</a>
             </div>
-
-            <div class="dropbtn-updates">Updates</div>
-            <div class="dropdown-content-updates">
-                <a href="#patch-notes">Patch Notes</a>
-                <a href="#events">Events</a>
-                <a href="#community-updates">Community Updates</a>
-            </div>
         </div>
     </header>
 
