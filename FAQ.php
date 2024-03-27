@@ -10,6 +10,7 @@
     <title>FAQ</title>
     <link rel="icon" href="./img/logo.png">
     <link rel="stylesheet" href="./CSS/FAQ_style.css">
+    <!-- php header -->
 </head>
 
 <body>

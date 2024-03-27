@@ -12,6 +12,7 @@
     <link rel="icon" href="./img/logo.png">
     <link rel="stylesheet" href="./CSS/Redirecting_style.css">
     <script src="./JS/redirect.js" defer></script>
+    <!-- php header -->
 </head>
 
 <body>

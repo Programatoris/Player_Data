@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./CSS/Style2.css">
     <script src="./JS/Scripts2.js"></script>
     <script src="./JS/Scripts.js"></script>
+    <!-- php header -->
 </head>
 
 <body>

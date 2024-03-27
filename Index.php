@@ -11,6 +11,7 @@
     <link rel="icon" href="./img/logo.png">
     <link rel="stylesheet" href="./CSS/Style.css">
     <script src="./JS/Scripts.js"></script>
+    <!-- php header -->
 </head>
 
 <body>
